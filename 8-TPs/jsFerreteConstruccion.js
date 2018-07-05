@@ -28,7 +28,7 @@ function Circulo ()
     
     radio = parseInt(radio);
 
-    perimetro = 2 * Math.PI * radio;
+    perimetro = 2 * Math.PI * radio; //Math.PI devuelve el valor exacto de PI con todos sus comas y demas
 
     cantDeAlambre = radio * 3;
 
