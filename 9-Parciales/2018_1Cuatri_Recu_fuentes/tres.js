@@ -3,12 +3,12 @@ function mostrar()
     var precio, descuento, IVA, calculoIVA, precioFinal;
 
     precio = prompt("Ingrese precio");
-    descuento = prompt("Ingrese descuento");
+    descuento = prompt("Ingrese porcentaje de descuento");
 
     precio = parseInt(precio);
     descuento = parseInt(descuento);
 
-    precio = precio - descuento; 
+    precio = precio * (descuento/100); 
 
     IVA = 0.21;
 
