@@ -7,7 +7,7 @@ var random = Math.floor(Math.random()*(11-1))+1; //si quiero que toque el 10, el
 if(random >= 9)
 	msg = "Excelente";
 else{
-	if(random > 4){
+	if(random >= 4){
 		msg = "Aprobo";
 	}else{
 		msg = "Vamos, se puede";
