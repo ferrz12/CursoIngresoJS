@@ -9,8 +9,8 @@ function mostrar()
     var contMayores = 0;
     var contMenores = 0;
     var contHombresMayores = 0;
-    var min = 0;
-    var max = 101;
+    var min = 101 ;
+    var max = 0;
     var promedioMujeres = 0;
     var promedioHombres = 0;
     var promedioTotal = 0;
@@ -29,6 +29,7 @@ function mostrar()
         sexo = sexo.toUpperCase();
         while(sexo != "M" && sexo != "F"){
             sexo = prompt("Ingrese una sexo valido");
+            sexo = sexo.toUpperCase();
         }
 
         edad = prompt("Ingrese edad");
@@ -58,14 +59,14 @@ function mostrar()
             contHombresMayores++;
         }
 
-        if(edad > max){
-            max = edad
-            nombreViejo = nombre;
+        if(edad < min){
+            min = edad
         }
         
-        if(edad<min){
-            min = edad;
-
+        if(edad > max){ // adentro del if sexo == F 
+            max = edad;
+            nombreViejo = nombre;
+            sexoViejo = sexo;
         }
 
 
@@ -85,7 +86,7 @@ promedioTotal = promedioHombres + promedioMujeres;
  document.write("La edad mas alta = " + max + "<br>");
  document.write("El promedio de edad de hombres es = " + promedioHombres + "<br>");
  document.write("El promedio de edad de mujeres es = " + promedioMujeres + "<br>");
- document.write("El promedio de edad de hombres es = " + promedioTotal + "<br>");
+ document.write("El promedio total es = " + promedioTotal + "<br>");
  document.write("El nombre del mas viejo es = " + nombreViejo + "<br>");
 
 }
