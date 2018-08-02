@@ -16,5 +16,5 @@ function mostrar()
 
     perimetro = 3 * base;
 
-    alert("El area es: " + area + " y el perimetro es: " + base);
+    alert("El area es: " + area + " y el perimetro es: " + perimetro);
 }

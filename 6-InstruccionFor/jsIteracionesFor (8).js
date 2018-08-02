@@ -17,22 +17,17 @@ for (var p = 1; p <= num ; p++) {
 
             console.log(i);
             contadorDivisores++;
-
         }
 
-        if(contadorDivisores != 2){
-                console.log("No es primo");
-            }else{
-                console.log("Es primo");
-                contadorDePrimos++;
-            }       
-}
+        if(contadorDivisores == 2){
+            contadorDePrimos++;
+        }
 
 }
 
-alert("La cantidad de primos = " + contadorDePrimos);
+}
 
-
-
+    
+console.log("La cantidad de primos = " + contadorDePrimos);
 
 }//FIN DE LA FUNCIÓN

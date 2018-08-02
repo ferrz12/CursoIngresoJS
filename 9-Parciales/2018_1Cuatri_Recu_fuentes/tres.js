@@ -1,24 +1,41 @@
 function mostrar()
 {
-    var precio, descuento, IVA, calculoIVA, precioFinal;
+    var precio;
+    var descuento;
+    var precioConDescuento;
+    var descuentoEnDinero;
+    var IVA = 0.21;
+    var precioFinal;
 
     precio = prompt("Ingrese precio");
-    descuento = prompt("Ingrese porcentaje de descuento");
-
     precio = parseInt(precio);
+
+    descuento = prompt("Ingrese porcentaje de descuento");
     descuento = parseInt(descuento);
 
-    precio = precio * (descuento/100); 
+    precioConDescuento = precio - (precio * (descuento/100));
 
-    IVA = 0.21;
+    alert("El descuento en dinero es: " + descuento + ", el precio con descuento es de: " + precioConDescuento + " el IVA es de: " + IVA);
 
-    alert("El descuento en dinero es de: " + descuento + ", el precio con descuento es de: " + precio + " y el IVA es de: " + IVA);
-    
-    calculoIVA = precio * IVA;
-
-    precioFinal = precio + calculoIVA; 
+    precioFinal = precioConDescuento + (precioConDescuento * IVA);
 
     document.getElementById("elPrecioFinal").value = precioFinal;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
 
 }
