@@ -12,6 +12,7 @@ for(i = 1; i < num + 1; i++){
 
 if(num%i == 0){
     console.log(i);
+    cantNumDivisores++;
 }
 
 }

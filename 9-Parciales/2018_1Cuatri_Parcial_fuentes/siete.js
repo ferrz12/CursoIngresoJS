@@ -61,12 +61,17 @@ function mostrar()
 
         if(edad < min){
             min = edad
+            nombreJoven = nombre;
         }
         
         if(edad > max){ // adentro del if sexo == F 
             max = edad;
             nombreViejo = nombre;
             sexoViejo = sexo;
+
+            if(sexo == "F"){
+                nombreMujerVieja = nombre;
+            }
         }
 
 
@@ -88,5 +93,6 @@ promedioTotal = promedioHombres + promedioMujeres;
  document.write("El promedio de edad de mujeres es = " + promedioMujeres + "<br>");
  document.write("El promedio total es = " + promedioTotal + "<br>");
  document.write("El nombre del mas viejo es = " + nombreViejo + "<br>");
+ document.write("El nombre de la mujer mas vieja = " + nombreMujerVieja);
 
 }
