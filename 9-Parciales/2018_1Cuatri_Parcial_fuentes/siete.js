@@ -74,8 +74,6 @@ function mostrar()
             }
         }
 
-
-
     }
 
 promedioMujeres = promedioMujeres/contMujeres;
@@ -93,6 +91,8 @@ promedioTotal = promedioHombres + promedioMujeres;
  document.write("El promedio de edad de mujeres es = " + promedioMujeres + "<br>");
  document.write("El promedio total es = " + promedioTotal + "<br>");
  document.write("El nombre del mas viejo es = " + nombreViejo + "<br>");
+ document.write("El nombre del mas joven = " + nombreJoven + "<br>");
+ document.write("El sexo del mas viejo = " + sexoViejo + "<br>");
  document.write("El nombre de la mujer mas vieja = " + nombreMujerVieja);
 
 }
